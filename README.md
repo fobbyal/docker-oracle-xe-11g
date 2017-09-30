@@ -14,10 +14,11 @@ from fobbyal/oracle-xe-11g
 ADD . /init/
 RUN /init.sh
 ```
-The above docker file will then run all scripts ***`.sql` as well as `.sh` in the files that are copied to the /init directory.
+The above docker file will then run all scripts *`.sql` as well as `.sh` in the files that are copied to the /init directory.
+
+
 Please note that this is only done once at Build-time of the Docker image. Any container that are started using the built image will start with data that was already manipulated ate buildtime.
 
 
 ## Usage
-Please refer to [wnameless/oracle-xe-11g](https://github.com/wnameless/docker-oracle-xe-
-    11g) for detailed usage
+Please refer to [wnameless/oracle-xe-11g](https://github.com/wnameless/docker-oracle-xe-11g) for detailed usage
